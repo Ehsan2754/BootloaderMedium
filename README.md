@@ -1,5 +1,5 @@
 # BootloaderMedium
-
+[![docs](https://github.com/Ehsan2754/ShinyAllocator/actions/workflows/docs.yml/badge.svg)](https://ehsan2754.github.io/ShinyAllocator/shinyAllocator_8c.html)
 ## Brief
 A frimware upgrade medium based on STM32373xx to upload frimware through bootloader to the host device STMF405. 
 

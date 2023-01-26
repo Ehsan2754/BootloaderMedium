@@ -5,7 +5,7 @@ medium:
 # Documentation target
 docs: FORCE
 	doxygen Doxyfile
-	firefox ./docs/index.html
+
 
 # Force target
 .PHONY: FORCE

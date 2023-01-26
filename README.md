@@ -15,6 +15,6 @@ On STM32F373, implement the function of controlling software loaded into another
 
 |Medium (F3)|Host (F4)|Role|
 |-|-|-|
-|PA8|BOOT0| Switching boot mode on host|
+|PA8|BOOT0| Switching boot mode on host (Pulled-Down)|
 |PA9( UART1 Tx )|BL Rx| Medium Frimware transmission line|
 |PA10(( UART1 Rx )|BL Tx| Medium Frimware recive line|

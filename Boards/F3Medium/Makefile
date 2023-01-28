@@ -57,7 +57,9 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c \
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c \
 Core/Src/system_stm32f3xx.c \
-../../Bootloader/bootloaderMedium.c
+../../Src/utils.c \
+../../Src/medium.c
+
 
 # ASM sources
 ASM_SOURCES =  \
@@ -107,8 +109,8 @@ AS_DEFS =
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
 -DSTM32F373xC \
--DSTM32_THREAD_SAFE_STRATEGY=2 \
--DSTM32F3
+-DSTM32_THREAD_SAFE_STRATEGY=2 
+
 
 
 # AS includes
@@ -121,7 +123,7 @@ C_INCLUDES =  \
 -IDrivers/STM32F3xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F3xx/Include \
 -IDrivers/CMSIS/Include \
--I../../Bootloader
+-I../../Inc
 
 
 # compile gcc flags

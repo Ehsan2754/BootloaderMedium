@@ -4,7 +4,7 @@ PROJECT_NUMBER         = 1.0
 PROJECT_BRIEF          = "A frimware upgrade medium based on STM32373xx to upload frimware through bootloader to the host device STMF405."
 
 # Input and output directories
-INPUT                  = Bootloader
+INPUT                  = Src Inc Tests
 OUTPUT_DIRECTORY       = docs
 
 # Documentation format and style

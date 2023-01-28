@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "main.h": "c",
-        "stm32f3xx_hal.h": "c"
+        "stm32f3xx_hal.h": "c",
+        "bootloaderconfig.h": "c",
+        "utils.h": "c"
     }
 }

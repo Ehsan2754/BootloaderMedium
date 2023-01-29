@@ -15,13 +15,15 @@
   *
   ******************************************************************************
   */
+#include "stm32f4xx_ll_rcc.h"
+#include "stm32f4xx_ll_bus.h"
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "host.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -92,7 +94,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_WWDG_Init();
   /* USER CODE BEGIN 2 */
-
+  OpenBootloader_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -102,6 +104,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    OpenBootloader_ProtocolDetection();
   }
   /* USER CODE END 3 */
 }
@@ -229,7 +232,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void System_DeInit(void)
+{
+  HAL_RCC_DeInit();
+}
 /* USER CODE END 4 */
 
 /**

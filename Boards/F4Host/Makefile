@@ -34,6 +34,8 @@ BUILD_DIR = build
 ######################################
 # source
 ######################################
+BL_SOURCES = $(wildcard ../../OpenBootloader/**/*.c)
+
 # C sources
 C_SOURCES =  \
 Core/Src/main.c \
@@ -58,7 +60,8 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c \
 Core/Src/system_stm32f4xx.c  \
 ../../Src/utils.c \
-../../Src/host.c
+../../Src/host.c \
+$(BL_SOURCES)
 
 # ASM sources
 ASM_SOURCES =  \
@@ -120,6 +123,9 @@ C_INCLUDES =  \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \
 -IDrivers/CMSIS/Include \
+-I../../OpenBootloader/Core \
+-I../../OpenBootloader/Interface \
+-I../../OpenBootloader/Modules \
 -I../../Inc
 
 

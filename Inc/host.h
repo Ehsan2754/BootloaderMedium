@@ -12,6 +12,9 @@
 #ifndef _HOST_H__
 #define _HOST_H__
 
+void OpenBootloader_Init(void);
+void OpenBootloader_DeInit(void);
+void OpenBootloader_ProtocolDetection(void);
 
 
 #endif // _HOST_H__

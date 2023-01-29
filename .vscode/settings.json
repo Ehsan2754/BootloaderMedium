@@ -4,6 +4,9 @@
         "main.h": "c",
         "stm32f3xx_hal.h": "c",
         "bootloaderconfig.h": "c",
-        "utils.h": "c"
+        "utils.h": "c",
+        "stdbool.h": "c",
+        "host.h": "c",
+        "iwdg_interface.h": "c"
     }
 }
